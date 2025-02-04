@@ -10,13 +10,6 @@ export const Navbar = () => {
               <span className="text-xl font-bold text-blue-600">MultiplugAI</span>
             </a>
           </div>
-          
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#product" className="text-gray-600 hover:text-gray-900">Product</a>
-            <a href="#pricing" className="text-gray-600 hover:text-gray-900">Price</a>
-            <a href="#about" className="text-gray-600 hover:text-gray-900">About us</a>
-            <Button variant="outline">Login</Button>
-          </div>
         </div>
       </div>
     </nav>

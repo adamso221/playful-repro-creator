@@ -18,9 +18,6 @@ export const Hero = () => {
           <Button size="lg" className="text-lg" onClick={handleWaitingList}>
             Join the waiting list
           </Button>
-          <Button size="lg" variant="outline" className="text-lg" onClick={handleWaitingList}>
-            Learn more
-          </Button>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
