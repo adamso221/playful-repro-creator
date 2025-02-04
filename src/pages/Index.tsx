@@ -5,6 +5,10 @@ import { FAQ } from "@/components/FAQ";
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
+  const handleWaitingList = () => {
+    window.open("https://forms.gle/oV8NqLTyBLWAFgNs7", "_blank");
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -20,8 +24,8 @@ const Index = () => {
           <p className="text-xl text-gray-600 mb-8">
             Get instant insights from real-time experiments and build exactly what your customers need.
           </p>
-          <Button size="lg" className="text-lg">
-            Try it now
+          <Button size="lg" className="text-lg" onClick={handleWaitingList}>
+            Join the waiting list
           </Button>
         </div>
       </section>

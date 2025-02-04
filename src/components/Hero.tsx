@@ -1,6 +1,10 @@
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
+  const handleWaitingList = () => {
+    window.open("https://forms.gle/oV8NqLTyBLWAFgNs7", "_blank");
+  };
+
   return (
     <div className="pt-24 pb-16 text-center">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,10 +15,10 @@ export const Hero = () => {
           Save time and effort with AI-powered pricing for modern businesses, eliminating the need to constantly reconfigure things or update manually.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-          <Button size="lg" className="text-lg">
-            Try it now
+          <Button size="lg" className="text-lg" onClick={handleWaitingList}>
+            Join the waiting list
           </Button>
-          <Button size="lg" variant="outline" className="text-lg">
+          <Button size="lg" variant="outline" className="text-lg" onClick={handleWaitingList}>
             Learn more
           </Button>
         </div>
