@@ -1,12 +1,16 @@
-import { Navbar } from "@/components/Navbar";
-import { Hero } from "@/components/Hero";
+
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
+import { Dashboard } from "@/components/dashboard";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <Hero />
-    </div>
+    <SidebarProvider>
+      <div className="min-h-screen flex w-full">
+        <AppSidebar />
+        <Dashboard />
+      </div>
+    </SidebarProvider>
   );
 };
 
